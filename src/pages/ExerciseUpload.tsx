@@ -80,10 +80,9 @@ const ExerciseUpload: React.FC = () => {
               defaultFileList={[]}
               className="upload-list-inline"
             >
-              <Button className="h-max py-4" type="dashed">
-                <div className="w-80">
-                  <img src={'/icon-upload.png'} className='w-12 mx-auto' />
-                  <p className="text-center">Browse Files to upload</p>
+              <Button className="h-max border-none p-0">
+                <div className="">
+                  <img src={'/icon-upload.png'} className='w-60 mx-auto' />
                 </div>
               </Button>
             </Upload>
@@ -110,16 +109,15 @@ const ExerciseUpload: React.FC = () => {
             </div>
           </div>
           <div className="mb-10">
-            <p className="mb-2">UPLOAD EXERCISE</p>
+            <p className="mb-2">UPLOAD EXERCISE (File .mp4)</p>
             <Upload
               defaultFileList={[]}
               className="upload-list-inline"
               {...VideoUploadProps}
             >
-              <Button className="h-max py-4" type="dashed">
-                <div className="w-96">
-                  <img src={'/icon-upload.png'} className='w-12 mx-auto' />
-                  <p className="text-center">Browse Files to upload</p>
+              <Button className="h-max py-4 border-none p-0">
+                <div className="">
+                  <img src={'/icon-upload.png'} className='w-60 mx-auto' />
                 </div>
               </Button>
             </Upload>
