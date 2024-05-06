@@ -26,7 +26,10 @@ const VideoUploadProps: UploadProps = {
       body: file,
     })
       .then((res) => res.json())
-      .then(({ thumbnail }) => thumbnail);
+      .then(({ thumbnail }) => thumbnail)
+      .catch(err => {
+        console.log(err)
+      });
   },
 };
 
