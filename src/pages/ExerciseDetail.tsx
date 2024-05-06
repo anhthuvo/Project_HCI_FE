@@ -24,8 +24,8 @@ const ExerciseDetail: React.FC = () => {
               <Button size="large" >BACK</Button>
             </Link>
             <div className="flex space-x-10 mt-10">
-              <div className="w-max">
-                <p className="text-center">Reps</p>
+              <div className="w-max">                   
+                <p className="text-center">Sets</p>
                 <div className="rounded-full h-28 w-28 bg-slate-500	pt-2 pl-2">
                   <div className="rounded-full h-24 w-24 bg-white pt-2 pl-2">
                     <div className="rounded-full h-20 w-20 bg-slate-500 pt-2 pl-2">

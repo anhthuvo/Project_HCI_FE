@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import { Button, Form, Input, Upload, Select, InputNumber } from 'antd';
 import { CATEGORIES } from '../constant';
 import { UploadOutlined } from '@ant-design/icons';
-
+import { Link } from "react-router-dom";
 import type { UploadFile, UploadProps } from 'antd';
 
 const fileList: UploadFile[] = [
@@ -58,13 +58,13 @@ const ExerciseUpload: React.FC = () => {
           className='flex flex-wrap'
         >
           <div className="w-1/2">
-            <Form.Item name={['user', 'name']} label="NAME EXERCISE" rules={[{ required: true }]} className="">
+            <Form.Item name={'name'} label="NAME EXERCISE" rules={[{ required: true }]} className="">
               <Input />
             </Form.Item>
-            <Form.Item name={['user', 'description']} label="EXERCISE DESCRIPTION" className="">
+            <Form.Item name={'description'} label="EXERCISE DESCRIPTION" className="">
               <Input.TextArea />
             </Form.Item>
-            <Form.Item name={['user', 'category']} label="CATEGORY" rules={[{ required: true }]} className="">
+            <Form.Item name={'category'} label="CATEGORY" rules={[{ required: true }]} className="">
               <Select
                 mode="multiple"
                 style={{ minWidth: '10rem' }}
@@ -124,9 +124,12 @@ const ExerciseUpload: React.FC = () => {
           </div>
           <div className="w-full flex">
             <Form.Item>
-              <Button type="primary" htmlType="submit" className='mr-10 bg-orange-200'>
+              <Link to="/exercises">
+              <Button type="primary" htmlType="submit" className='mr-10 bg-orange-300'
+              >
                 CANCEL
               </Button>
+              </Link>
             </Form.Item>
             <Form.Item>
               <Button type="primary" htmlType="submit">
